@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 # **healthGet**
 ```swift
-    open class func healthGet(completion: @escaping (_ data: AnyCodableDTO?, _ error: Error?) -> Void)
+    open class func healthGet(completion: @escaping (_ data: AnyCodable?, _ error: Error?) -> Void)
 ```
 
 
@@ -46,7 +46,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AnyCodableDTO**](AnyCodableDTO.md)
+[**AnyCodable**](AnyCodable.md)
 
 ### Authorization
 
@@ -61,7 +61,7 @@ No authorization required
 
 # **healthOptions**
 ```swift
-    open class func healthOptions(completion: @escaping (_ data: AnyCodableDTO?, _ error: Error?) -> Void)
+    open class func healthOptions(completion: @escaping (_ data: AnyCodable?, _ error: Error?) -> Void)
 ```
 
 
@@ -89,7 +89,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AnyCodableDTO**](AnyCodableDTO.md)
+[**AnyCodable**](AnyCodable.md)
 
 ### Authorization
 
@@ -104,7 +104,7 @@ No authorization required
 
 # **productDelete**
 ```swift
-    open class func productDelete(completion: @escaping (_ data: AnyCodableDTO?, _ error: Error?) -> Void)
+    open class func productDelete(completion: @escaping (_ data: AnyCodable?, _ error: Error?) -> Void)
 ```
 
 
@@ -132,7 +132,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AnyCodableDTO**](AnyCodableDTO.md)
+[**AnyCodable**](AnyCodable.md)
 
 ### Authorization
 
@@ -147,7 +147,7 @@ No authorization required
 
 # **productGet**
 ```swift
-    open class func productGet(completion: @escaping (_ data: AnyCodableDTO?, _ error: Error?) -> Void)
+    open class func productGet(completion: @escaping (_ data: AnyCodable?, _ error: Error?) -> Void)
 ```
 
 
@@ -175,7 +175,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AnyCodableDTO**](AnyCodableDTO.md)
+[**AnyCodable**](AnyCodable.md)
 
 ### Authorization
 
@@ -190,7 +190,7 @@ No authorization required
 
 # **productOptions**
 ```swift
-    open class func productOptions(completion: @escaping (_ data: AnyCodableDTO?, _ error: Error?) -> Void)
+    open class func productOptions(completion: @escaping (_ data: AnyCodable?, _ error: Error?) -> Void)
 ```
 
 
@@ -218,7 +218,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AnyCodableDTO**](AnyCodableDTO.md)
+[**AnyCodable**](AnyCodable.md)
 
 ### Authorization
 
@@ -233,7 +233,7 @@ No authorization required
 
 # **productPost**
 ```swift
-    open class func productPost(completion: @escaping (_ data: AnyCodableDTO?, _ error: Error?) -> Void)
+    open class func productPost(completion: @escaping (_ data: AnyCodable?, _ error: Error?) -> Void)
 ```
 
 
@@ -261,7 +261,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AnyCodableDTO**](AnyCodableDTO.md)
+[**AnyCodable**](AnyCodable.md)
 
 ### Authorization
 
@@ -276,7 +276,7 @@ No authorization required
 
 # **productPut**
 ```swift
-    open class func productPut(completion: @escaping (_ data: AnyCodableDTO?, _ error: Error?) -> Void)
+    open class func productPut(completion: @escaping (_ data: AnyCodable?, _ error: Error?) -> Void)
 ```
 
 
@@ -304,7 +304,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AnyCodableDTO**](AnyCodableDTO.md)
+[**AnyCodable**](AnyCodable.md)
 
 ### Authorization
 
@@ -319,7 +319,7 @@ No authorization required
 
 # **productsGet**
 ```swift
-    open class func productsGet(completion: @escaping (_ data: AnyCodableDTO?, _ error: Error?) -> Void)
+    open class func productsGet(completion: @escaping (_ data: AnyCodable?, _ error: Error?) -> Void)
 ```
 
 
@@ -347,7 +347,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AnyCodableDTO**](AnyCodableDTO.md)
+[**AnyCodable**](AnyCodable.md)
 
 ### Authorization
 
@@ -362,7 +362,7 @@ No authorization required
 
 # **productsOptions**
 ```swift
-    open class func productsOptions(completion: @escaping (_ data: AnyCodableDTO?, _ error: Error?) -> Void)
+    open class func productsOptions(completion: @escaping (_ data: AnyCodable?, _ error: Error?) -> Void)
 ```
 
 
@@ -390,7 +390,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AnyCodableDTO**](AnyCodableDTO.md)
+[**AnyCodable**](AnyCodable.md)
 
 ### Authorization
 
@@ -405,7 +405,7 @@ No authorization required
 
 # **productsPost**
 ```swift
-    open class func productsPost(completion: @escaping (_ data: AnyCodableDTO?, _ error: Error?) -> Void)
+    open class func productsPost(completion: @escaping (_ data: AnyCodable?, _ error: Error?) -> Void)
 ```
 
 
@@ -433,7 +433,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**AnyCodableDTO**](AnyCodableDTO.md)
+[**AnyCodable**](AnyCodable.md)
 
 ### Authorization
 

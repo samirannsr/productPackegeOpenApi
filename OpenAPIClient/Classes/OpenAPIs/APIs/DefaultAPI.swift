@@ -17,13 +17,13 @@ open class DefaultAPI {
 
     /**
 
-     - returns: AnyPublisher<AnyCodableDTO, Error>
+     - returns: AnyPublisher<AnyCodable, Error>
      */
     #if canImport(Combine)
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-    open class func healthGet() -> AnyPublisher<AnyCodableDTO, Error> {
+    open class func healthGet() -> AnyPublisher<AnyCodable, Error> {
         var requestTask: RequestTask?
-        return Future<AnyCodableDTO, Error> { promise in
+        return Future<AnyCodable, Error> { promise in
             requestTask = healthGetWithRequestBuilder().execute { result in
                 switch result {
                 case let .success(response):
@@ -42,9 +42,9 @@ open class DefaultAPI {
 
     /**
      - GET /health
-     - returns: RequestBuilder<AnyCodableDTO> 
+     - returns: RequestBuilder<AnyCodable> 
      */
-    open class func healthGetWithRequestBuilder() -> RequestBuilder<AnyCodableDTO> {
+    open class func healthGetWithRequestBuilder() -> RequestBuilder<AnyCodable> {
         let localVariablePath = "/health"
         let localVariableURLString = OpenAPIClientAPI.basePath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
@@ -57,20 +57,20 @@ open class DefaultAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AnyCodableDTO>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AnyCodable>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "GET", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: false)
     }
 
     /**
 
-     - returns: AnyPublisher<AnyCodableDTO, Error>
+     - returns: AnyPublisher<AnyCodable, Error>
      */
     #if canImport(Combine)
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-    open class func healthOptions() -> AnyPublisher<AnyCodableDTO, Error> {
+    open class func healthOptions() -> AnyPublisher<AnyCodable, Error> {
         var requestTask: RequestTask?
-        return Future<AnyCodableDTO, Error> { promise in
+        return Future<AnyCodable, Error> { promise in
             requestTask = healthOptionsWithRequestBuilder().execute { result in
                 switch result {
                 case let .success(response):
@@ -90,9 +90,9 @@ open class DefaultAPI {
     /**
      - OPTIONS /health
      - responseHeaders: [Access-Control-Allow-Origin(String), Access-Control-Allow-Methods(String), Access-Control-Allow-Headers(String)]
-     - returns: RequestBuilder<AnyCodableDTO> 
+     - returns: RequestBuilder<AnyCodable> 
      */
-    open class func healthOptionsWithRequestBuilder() -> RequestBuilder<AnyCodableDTO> {
+    open class func healthOptionsWithRequestBuilder() -> RequestBuilder<AnyCodable> {
         let localVariablePath = "/health"
         let localVariableURLString = OpenAPIClientAPI.basePath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
@@ -105,20 +105,20 @@ open class DefaultAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AnyCodableDTO>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AnyCodable>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "OPTIONS", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: false)
     }
 
     /**
 
-     - returns: AnyPublisher<AnyCodableDTO, Error>
+     - returns: AnyPublisher<AnyCodable, Error>
      */
     #if canImport(Combine)
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-    open class func productDelete() -> AnyPublisher<AnyCodableDTO, Error> {
+    open class func productDelete() -> AnyPublisher<AnyCodable, Error> {
         var requestTask: RequestTask?
-        return Future<AnyCodableDTO, Error> { promise in
+        return Future<AnyCodable, Error> { promise in
             requestTask = productDeleteWithRequestBuilder().execute { result in
                 switch result {
                 case let .success(response):
@@ -137,9 +137,9 @@ open class DefaultAPI {
 
     /**
      - DELETE /product
-     - returns: RequestBuilder<AnyCodableDTO> 
+     - returns: RequestBuilder<AnyCodable> 
      */
-    open class func productDeleteWithRequestBuilder() -> RequestBuilder<AnyCodableDTO> {
+    open class func productDeleteWithRequestBuilder() -> RequestBuilder<AnyCodable> {
         let localVariablePath = "/product"
         let localVariableURLString = OpenAPIClientAPI.basePath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
@@ -152,20 +152,20 @@ open class DefaultAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AnyCodableDTO>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AnyCodable>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "DELETE", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: false)
     }
 
     /**
 
-     - returns: AnyPublisher<AnyCodableDTO, Error>
+     - returns: AnyPublisher<AnyCodable, Error>
      */
     #if canImport(Combine)
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-    open class func productGet() -> AnyPublisher<AnyCodableDTO, Error> {
+    open class func productGet() -> AnyPublisher<AnyCodable, Error> {
         var requestTask: RequestTask?
-        return Future<AnyCodableDTO, Error> { promise in
+        return Future<AnyCodable, Error> { promise in
             requestTask = productGetWithRequestBuilder().execute { result in
                 switch result {
                 case let .success(response):
@@ -184,9 +184,9 @@ open class DefaultAPI {
 
     /**
      - GET /product
-     - returns: RequestBuilder<AnyCodableDTO> 
+     - returns: RequestBuilder<AnyCodable> 
      */
-    open class func productGetWithRequestBuilder() -> RequestBuilder<AnyCodableDTO> {
+    open class func productGetWithRequestBuilder() -> RequestBuilder<AnyCodable> {
         let localVariablePath = "/product"
         let localVariableURLString = OpenAPIClientAPI.basePath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
@@ -199,20 +199,20 @@ open class DefaultAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AnyCodableDTO>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AnyCodable>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "GET", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: false)
     }
 
     /**
 
-     - returns: AnyPublisher<AnyCodableDTO, Error>
+     - returns: AnyPublisher<AnyCodable, Error>
      */
     #if canImport(Combine)
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-    open class func productOptions() -> AnyPublisher<AnyCodableDTO, Error> {
+    open class func productOptions() -> AnyPublisher<AnyCodable, Error> {
         var requestTask: RequestTask?
-        return Future<AnyCodableDTO, Error> { promise in
+        return Future<AnyCodable, Error> { promise in
             requestTask = productOptionsWithRequestBuilder().execute { result in
                 switch result {
                 case let .success(response):
@@ -232,9 +232,9 @@ open class DefaultAPI {
     /**
      - OPTIONS /product
      - responseHeaders: [Access-Control-Allow-Origin(String), Access-Control-Allow-Methods(String), Access-Control-Allow-Headers(String)]
-     - returns: RequestBuilder<AnyCodableDTO> 
+     - returns: RequestBuilder<AnyCodable> 
      */
-    open class func productOptionsWithRequestBuilder() -> RequestBuilder<AnyCodableDTO> {
+    open class func productOptionsWithRequestBuilder() -> RequestBuilder<AnyCodable> {
         let localVariablePath = "/product"
         let localVariableURLString = OpenAPIClientAPI.basePath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
@@ -247,20 +247,20 @@ open class DefaultAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AnyCodableDTO>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AnyCodable>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "OPTIONS", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: false)
     }
 
     /**
 
-     - returns: AnyPublisher<AnyCodableDTO, Error>
+     - returns: AnyPublisher<AnyCodable, Error>
      */
     #if canImport(Combine)
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-    open class func productPost() -> AnyPublisher<AnyCodableDTO, Error> {
+    open class func productPost() -> AnyPublisher<AnyCodable, Error> {
         var requestTask: RequestTask?
-        return Future<AnyCodableDTO, Error> { promise in
+        return Future<AnyCodable, Error> { promise in
             requestTask = productPostWithRequestBuilder().execute { result in
                 switch result {
                 case let .success(response):
@@ -279,9 +279,9 @@ open class DefaultAPI {
 
     /**
      - POST /product
-     - returns: RequestBuilder<AnyCodableDTO> 
+     - returns: RequestBuilder<AnyCodable> 
      */
-    open class func productPostWithRequestBuilder() -> RequestBuilder<AnyCodableDTO> {
+    open class func productPostWithRequestBuilder() -> RequestBuilder<AnyCodable> {
         let localVariablePath = "/product"
         let localVariableURLString = OpenAPIClientAPI.basePath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
@@ -294,20 +294,20 @@ open class DefaultAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AnyCodableDTO>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AnyCodable>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: false)
     }
 
     /**
 
-     - returns: AnyPublisher<AnyCodableDTO, Error>
+     - returns: AnyPublisher<AnyCodable, Error>
      */
     #if canImport(Combine)
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-    open class func productPut() -> AnyPublisher<AnyCodableDTO, Error> {
+    open class func productPut() -> AnyPublisher<AnyCodable, Error> {
         var requestTask: RequestTask?
-        return Future<AnyCodableDTO, Error> { promise in
+        return Future<AnyCodable, Error> { promise in
             requestTask = productPutWithRequestBuilder().execute { result in
                 switch result {
                 case let .success(response):
@@ -326,9 +326,9 @@ open class DefaultAPI {
 
     /**
      - PUT /product
-     - returns: RequestBuilder<AnyCodableDTO> 
+     - returns: RequestBuilder<AnyCodable> 
      */
-    open class func productPutWithRequestBuilder() -> RequestBuilder<AnyCodableDTO> {
+    open class func productPutWithRequestBuilder() -> RequestBuilder<AnyCodable> {
         let localVariablePath = "/product"
         let localVariableURLString = OpenAPIClientAPI.basePath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
@@ -341,20 +341,20 @@ open class DefaultAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AnyCodableDTO>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AnyCodable>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "PUT", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: false)
     }
 
     /**
 
-     - returns: AnyPublisher<AnyCodableDTO, Error>
+     - returns: AnyPublisher<AnyCodable, Error>
      */
     #if canImport(Combine)
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-    open class func productsGet() -> AnyPublisher<AnyCodableDTO, Error> {
+    open class func productsGet() -> AnyPublisher<AnyCodable, Error> {
         var requestTask: RequestTask?
-        return Future<AnyCodableDTO, Error> { promise in
+        return Future<AnyCodable, Error> { promise in
             requestTask = productsGetWithRequestBuilder().execute { result in
                 switch result {
                 case let .success(response):
@@ -373,9 +373,9 @@ open class DefaultAPI {
 
     /**
      - GET /products
-     - returns: RequestBuilder<AnyCodableDTO> 
+     - returns: RequestBuilder<AnyCodable> 
      */
-    open class func productsGetWithRequestBuilder() -> RequestBuilder<AnyCodableDTO> {
+    open class func productsGetWithRequestBuilder() -> RequestBuilder<AnyCodable> {
         let localVariablePath = "/products"
         let localVariableURLString = OpenAPIClientAPI.basePath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
@@ -388,20 +388,20 @@ open class DefaultAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AnyCodableDTO>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AnyCodable>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "GET", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: false)
     }
 
     /**
 
-     - returns: AnyPublisher<AnyCodableDTO, Error>
+     - returns: AnyPublisher<AnyCodable, Error>
      */
     #if canImport(Combine)
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-    open class func productsOptions() -> AnyPublisher<AnyCodableDTO, Error> {
+    open class func productsOptions() -> AnyPublisher<AnyCodable, Error> {
         var requestTask: RequestTask?
-        return Future<AnyCodableDTO, Error> { promise in
+        return Future<AnyCodable, Error> { promise in
             requestTask = productsOptionsWithRequestBuilder().execute { result in
                 switch result {
                 case let .success(response):
@@ -421,9 +421,9 @@ open class DefaultAPI {
     /**
      - OPTIONS /products
      - responseHeaders: [Access-Control-Allow-Origin(String), Access-Control-Allow-Methods(String), Access-Control-Allow-Headers(String)]
-     - returns: RequestBuilder<AnyCodableDTO> 
+     - returns: RequestBuilder<AnyCodable> 
      */
-    open class func productsOptionsWithRequestBuilder() -> RequestBuilder<AnyCodableDTO> {
+    open class func productsOptionsWithRequestBuilder() -> RequestBuilder<AnyCodable> {
         let localVariablePath = "/products"
         let localVariableURLString = OpenAPIClientAPI.basePath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
@@ -436,20 +436,20 @@ open class DefaultAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AnyCodableDTO>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AnyCodable>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "OPTIONS", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: false)
     }
 
     /**
 
-     - returns: AnyPublisher<AnyCodableDTO, Error>
+     - returns: AnyPublisher<AnyCodable, Error>
      */
     #if canImport(Combine)
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-    open class func productsPost() -> AnyPublisher<AnyCodableDTO, Error> {
+    open class func productsPost() -> AnyPublisher<AnyCodable, Error> {
         var requestTask: RequestTask?
-        return Future<AnyCodableDTO, Error> { promise in
+        return Future<AnyCodable, Error> { promise in
             requestTask = productsPostWithRequestBuilder().execute { result in
                 switch result {
                 case let .success(response):
@@ -468,9 +468,9 @@ open class DefaultAPI {
 
     /**
      - POST /products
-     - returns: RequestBuilder<AnyCodableDTO> 
+     - returns: RequestBuilder<AnyCodable> 
      */
-    open class func productsPostWithRequestBuilder() -> RequestBuilder<AnyCodableDTO> {
+    open class func productsPostWithRequestBuilder() -> RequestBuilder<AnyCodable> {
         let localVariablePath = "/products"
         let localVariableURLString = OpenAPIClientAPI.basePath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
@@ -483,7 +483,7 @@ open class DefaultAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AnyCodableDTO>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AnyCodable>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: false)
     }
